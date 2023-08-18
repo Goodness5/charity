@@ -15,6 +15,15 @@ module.exports = {
       fontFamily: {
         genos: ['Genos', 'sans-serif'],
       },
+      keyframes: {
+        wiggle: {
+          '0%': { transform: 'translate(100%)' },
+          '100%': { transform: 'translate(0%)' },
+        }
+      },
+      animation: {
+        wiggle: 'wiggle 1s ease-in-out',
+      }
     },
   },
   plugins: [],
