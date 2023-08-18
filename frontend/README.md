@@ -5,6 +5,10 @@ git clone https://github.com/goodness5/charity.git
 ```
 
 ```bash
+cd frontend
+```
+
+```bash
 npm install
 ```
 
