@@ -16,11 +16,10 @@ export default function Home() {
         </div>
         <div className={isMenuOpen? 'w-[40%] flex max-md:absolute max-md:h-[40vh] max-md:flex-col max-md:right-0 max-md:top-[4em] animate-wiggle': 'hidden md:flex'}>
           <ul className='w-[100%] text-[#131313] text-2xl gap-8 font-genos flex justify-between items-center max-md:flex-col'>
-            <li> <a href='#'>Home</a></li>
+            <li> <a href='/'>Home</a></li>
             <li> <a href='#' className='flex gap-1'> <Image src='search-normal.svg' width={0} height={0} className="w-[20%]" />Search</a></li>
             <li> <a href='#'>About us</a></li>
-            <li><a href="#" ><button className='navbarDonateBtn'>donate</button></a></li>
-            
+            <li><a className='navbarDonateBtn flex justify-evenly' href='/Donate'><p>donate </p><Image src='Vector.svg' width={30} height={40} /></a></li>
           </ul>
           <div className='flex ml-4 justify-center item-center '>
             

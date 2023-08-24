@@ -42,19 +42,25 @@ border-right: 4px solid var(--primary-grey, #D7D7D7);
 border-bottom: 8px solid var(--primary-grey, #D7D7D7);
 border-left: 2px solid var(--primary-grey, #D7D7D7);
 }
-.navbarDonateBtn{
+.navbarDonateBtn {
   background: var(--primary, linear-gradient(27deg, #0CC71F 0.86%, #3EA0BF 38.20%, #FF449E 100%));
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-width: Hug (227px);
-height: Hug (64px);
-padding: 16px 56px 16px 56px;
-border-radius: 8px;
-border-width: 1px, 1px, 4px, 1px;
-border-style: solid;
-border-image-source: linear-gradient(80.95deg, #0CC71F -18.58%, #3EA0BF 27.44%, #FF449E 103.59%);  
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 227px;
+  height: 64px;
+  padding: 16px 56px 16px 56px;
+
+  /* Apply the gradient as a border image */
+  border: 4px solid red 8px;
+  border-image-source: linear-gradient(80.95deg, #0CC71F -18.58%, #3EA0BF 27.44%, #FF449E 103.59%);
+  border-image-slice: 1 1 4 1; /* Corresponds to the order: top right bottom left */
+  border-image-width: 1px 1px 4px 1px; /* Corresponds to the order: top right bottom left */
+  border-image-outset: 0; /* Reset the outset to prevent scaling of the gradient */
 }
+
+
+
 
 .btnn{
   padding: 16px 56px;
@@ -74,3 +80,40 @@ background: var(--primary, linear-gradient(27deg, #0CC71F 0.86%, #3EA0BF 38.20%,
     )
     rgb(var(--background-start-rgb));
 } */
+
+
+.gy{
+  background: var(--primary, linear-gradient(27deg, #0CC71F 0.86%, #3EA0BF 38.20%, #FF449E 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.element {
+  /* width: 200px; */
+  /* height: 200px; */
+  border-width: 2px 4px 8px 2px;
+  border-style: solid;
+  border-color: transparent;  
+  background: linear-gradient(80.95deg, #0CC71F -18.58%, #3EA0BF 27.44%, #FF449E 103.59%),
+  linear-gradient(0deg, #FBFCEB, #FBFCEB);
+  border-radius: 8px;
+}
+.buttonshade{
+  border-width: 2px 4px 4px 2px;
+  border-style: solid;
+  border-color: transparent;  
+  background: linear-gradient(80.95deg, #0CC71F -18.58%, #3EA0BF 27.44%, #FF449E 103.59%),
+  linear-gradient(0deg, #FBFCEB, #FBFCEB);
+  border-radius: 4px;
+}
+.me{
+  border-radius: 8px;
+border-top: 2px solid var(--primary-grey, #D7D7D7);
+border-right: 4px solid var(--primary-grey, #D7D7D7);
+border-bottom: 8px solid var(--primary-grey, #D7D7D7);
+border-left: 2px solid var(--primary-grey, #D7D7D7);
+}
+
+
+

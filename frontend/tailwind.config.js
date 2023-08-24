@@ -14,6 +14,7 @@ module.exports = {
       },
       fontFamily: {
         genos: ['Genos', 'sans-serif'],
+        Georama: ['Georama']
       },
       keyframes: {
         wiggle: {
