@@ -7,7 +7,7 @@ print(reference_id)
 
 headers = {
     'Content-Type': 'application/json',
-    'Ocp-Apim-Subscription-Key': '4ae0c999e9cb4782914b1e0fa0c30787',  # Replace with your subscription key
+    'Ocp-Apim-Subscription-Key': '4ae0c999e9cb4782914b1e0fa0c30787', 
 }
 
 params = urllib.parse.urlencode({})
