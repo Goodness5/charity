@@ -13,7 +13,7 @@ export default function Donate() {
   useEffect(() => {
     const interval = setInterval(() => {
       setMoney((prevMoney) => {
-        const newMoney = prevMoney + 50;
+        const newMoney = prevMoney + 100;
         return newMoney >= 10000 ? 10000 : newMoney;
       });
     }, 500);
@@ -98,16 +98,16 @@ export default function Donate() {
               </div>
             </div>
             <div className='me text-[16px] justify-between flex flex-col p-8'>
-              <div className='buttonshade'>
-                <div className='h-[12em] bg-[#fff] flex flex-col-reverse'>
+              {/* <div className='buttonshade'> */}
+                {/* <div className='h-[12em] bg-[#fff] flex flex-col-reverse'> */}
                   <div className='donateNowButtonShade'>
                     <div className='h-full bg-[#fff] p-4 flex'>
                       <p><span className='font-bold'>$5,000</span></p>
                       <p>Cater for the accommodation and feeding of 100 Nigerians displaced by the flood</p>
                     </div>
                   </div>
-                </div>
-              </div>
+                {/* </div> */}
+              {/* </div> */}
             </div>
             
           </div>
