@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image'
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import { FaBars, FaSearch } from 'react-icons/fa';
 
 export default function Donate() {
@@ -8,6 +8,21 @@ export default function Donate() {
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
+  const [money, setMoney] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setMoney((prevMoney) => {
+        const newMoney = prevMoney + 50;
+        return newMoney >= 10000 ? 10000 : newMoney;
+      });
+    }, 500);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const normalizedValue = Math.min(money, 10000);
+  const progressPercentage = (normalizedValue / 10000) * 100;
   return (
     <>
       <section className='px-12'>
@@ -61,26 +76,40 @@ export default function Donate() {
               </div>
             </section>
           </div>
-          <div className='bg-red-100 h-[90vh] w-[40%]'>
+          <div className='bg-red-100 h-[90vh] w-[40%] flex flex-col gap-y-6'>
             <div className='me text-[16px] justify-between flex flex-col p-8'>
               <div className='flex items-center gap-x-[1em]'>
-                <h1 className='font-bold text-[48px] font-Georama'>$0</h1>
+                <h1 className='font-bold text-[48px] font-Georama'>${money}</h1>
                 <p className='text-[24px]'>raised of $10,000 goal</p>
 
               </div>
-              <div className='h-[2em] mb-2 bg-sky-400'>
-
+              <div className="w-full h-4 bg-gray-300 rounded overflow-hidden">
+                
+              <div className="h-full bg-blue-500" style={{ width: `${progressPercentage}%` }}></div>
               </div>
               <div className='flex items-center gap-x-[1em] justify-between'>
                 <p><span className='font-bold'>0</span> Donations</p>
                 <p><span className='font-bold'>$10,000</span> to go</p>
               </div>
-              <div>
-                <div className='buttonshade'>
-                <button className='bg-white h-full w-full'>Donate</button>
+              <div className='flex justify-center'>
+                <div className='buttonshade w-[40%]'>
+                  <button className='bg-white h-full w-full flex items-center justify-center gap-2 py-4'>Donate Now <Image src='Vector.svg' width={30} height={40} /></button>
                 </div>
               </div>
             </div>
+            <div className='me text-[16px] justify-between flex flex-col p-8'>
+              <div className='buttonshade'>
+                <div className='h-[12em] bg-[#fff] flex flex-col-reverse'>
+                  <div className='donateNowButtonShade'>
+                    <div className='h-full bg-[#fff] p-4 flex'>
+                      <p><span className='font-bold'>$5,000</span></p>
+                      <p>Cater for the accommodation and feeding of 100 Nigerians displaced by the flood</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </section>
       </section>

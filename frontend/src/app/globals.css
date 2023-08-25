@@ -114,6 +114,14 @@ border-right: 4px solid var(--primary-grey, #D7D7D7);
 border-bottom: 8px solid var(--primary-grey, #D7D7D7);
 border-left: 2px solid var(--primary-grey, #D7D7D7);
 }
+.donateNowButtonShade{
+  border-width: 2px 0px 4px 0px;
+  border-style: solid;
+  border-color: transparent;  
+  background: linear-gradient(80.95deg, #0CC71F -18.58%, #3EA0BF 27.44%, #FF449E 103.59%),
+  linear-gradient(0deg, #FBFCEB, #FBFCEB);
+  /* border-radius: 4px; */
+}
 
 
 
