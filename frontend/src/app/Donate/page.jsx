@@ -76,7 +76,7 @@ export default function Donate() {
               </div>
             </section>
           </div>
-          <div className='bg-red-100 h-[90vh] w-[40%] flex flex-col gap-y-6'>
+          <div className='bg-red-100 w-[40%] flex flex-col gap-y-6'>
             <div className='me text-[16px] justify-between flex flex-col p-8'>
               <div className='flex items-center gap-x-[1em]'>
                 <h1 className='font-bold text-[48px] font-Georama'>${money}</h1>
@@ -110,6 +110,34 @@ export default function Donate() {
                     <div className='h-full bg-[#fff] p-4 flex gap-x-4'>
                       <p><span className='font-bold'>$5,000</span></p>
                       <p>Cater for the accommodation and feeding of 100 Nigerians displaced by the flood</p>
+                    </div>
+                  </div><div className='donateNowButtonShade'>
+                    <div className='h-full bg-[#fff] p-4 flex gap-x-4'>
+                      <p><span className='font-bold'>$2,000</span></p>
+                      <p>Cater for the accommodation and feeding of 100 Nigerians displaced by the flood</p>
+                    </div>
+                  </div><div className='donateNowButtonShade'>
+                    <div className='h-full bg-[#fff] p-4 flex gap-x-4'>
+                      <p><span className='font-bold'>$1,000</span></p>
+                      <p>Cater for the accommodation and feeding of 100 Nigerians displaced by the flood</p>
+                    </div>
+                  </div>
+                  <div className='donateNowButtonShade'>
+                    <div className='h-full bg-[#fff] p-4 flex gap-x-4'>
+                      <p><span className='font-bold'>$250</span></p>
+                      <p>Cater for the accommodation and feeding of 100 Nigerians displaced by the flood</p>
+                    </div>
+                  </div><div className='donateNowButtonShade'>
+                    <div className='h-full bg-[#fff] p-4 flex gap-x-4'>
+                      <p><span className='font-bold'>$25</span></p>
+                      <p>Cater for the accommodation and feeding of 100 Nigerians displaced by the flood</p>
+                    </div>
+                  </div>
+                  <div className='donateNowButtonShade'>
+                    <div className='h-full bg-[#fff] p-4 flex gap-x-4'>
+                      {/* <p><span className='font-bold'>$5,000</span></p> */}
+                      <input type="text" />
+                      <p>Amount to donate</p>
                     </div>
                   </div>
                 {/* </div> */}
