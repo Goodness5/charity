@@ -134,9 +134,9 @@ export default function Donate() {
                     </div>
                   </div>
                   <div className='donateNowButtonShade'>
-                    <div className='h-full bg-[#fff] p-4 flex gap-x-4'>
+                    <div className='h-full bg-[#fff] p-4 flex items-center gap-x-4'>
                       {/* <p><span className='font-bold'>$5,000</span></p> */}
-                      <input type="text" />
+                      <input type="text" className='inputBorder'/>
                       <p>Amount to donate</p>
                     </div>
                   </div>
