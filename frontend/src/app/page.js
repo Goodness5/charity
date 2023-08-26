@@ -33,7 +33,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
+     <section>
         <div>
           <h1 className='text-center text-[48px] font-bold'>Projects You Can Donate To</h1>
           <p className='text-center text-[24px]'>These are popular causes around the world <br /> people are currently donating to</p>

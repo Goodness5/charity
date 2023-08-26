@@ -11,10 +11,10 @@ export default function Home() {
   return (
     <>
       <nav className='flex justify-between relative'>
-        <div className=' w-[50%] pl-12  max-md:pl-3'>
+        <div className=' w-[35%] pl-12  max-md:pl-3'>
           <Image src="logo.svg" width={0} height={0} className="w-[30%] max-md:w-[70%]" />
         </div>
-        <div className={isMenuOpen? 'w-[40%] flex max-md:absolute max-md:h-[40vh] max-md:flex-col max-md:right-0 max-md:top-[4em] animate-wiggle': 'hidden md:flex'}>
+        <div className={isMenuOpen? 'w-[65%] flex max-md:absolute max-md:h-[40vh] max-md:flex-col max-md:right-0 max-md:top-[4em] animate-wiggle': 'hidden md:flex'}>
           <ul className='w-[100%] text-[#131313] text-2xl gap-8 font-genos flex justify-between items-center max-md:flex-col'>
             <li> <a href='/'>Home</a></li>
             <li> <a href='#' className='flex gap-1'> <Image src='search-normal.svg' width={0} height={0} className="w-[20%]" />Search</a></li>

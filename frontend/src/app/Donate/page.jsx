@@ -76,7 +76,7 @@ export default function Donate() {
               </div>
             </section>
           </div>
-          <div className='bg-red-100 w-[40%] flex flex-col gap-y-6'>
+          <div className='w-[40%] flex flex-col gap-y-6'>
             <div className='me text-[16px] justify-between flex flex-col p-8'>
               <div className='flex items-center gap-x-[1em]'>
                 <h1 className='font-bold text-[48px] font-Georama'>${money}</h1>
@@ -140,12 +140,50 @@ export default function Donate() {
                       <p>Amount to donate</p>
                     </div>
                   </div>
+                  <p>
+                    Donating through Donorm is safe, secure and easy with many payment options to chose from
+                  </p>
                 {/* </div> */}
               {/* </div> */}
             </div>
             
           </div>
         </section>
+        <section>
+        <div>
+          <h1 className='text-center text-[48px] font-bold'>More Projects You Can Donate To</h1>
+          <p className='text-center text-[24px]'>These are popular causes around the world <br /> people are currently donating to</p>
+        </div>
+        <div className='p-12 flex justify-between'>
+          <div className='w-[30%] rounded borderstyling'>
+            <img src='./boyonboat.jpg' class="w-full" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-[20px] mb-2 text-[#616060]">Nigeria</div>
+              <p class="text-black text-[24px] font-bold">
+                Provide Health Care to 20 Villages in Borno State
+              </p>
+            </div>
+          </div>
+          <div className='w-[30%] rounded shadow-lg borderstyling'>
+            <img src='./sunset.jpg' class="w-full" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-[20px]  mb-2 text-[#616060]">PHILIPINES</div>
+              <p class="text-black text-[24px] font-bold">
+                Provide Health Care to 20 Villages in Borno State
+              </p>
+            </div>
+          </div>
+          <div className='w-[30%] rounded shadow-lg borderstyling'>
+            <img src='./floodedhome.jpg' class="w-full" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-[20px]  mb-2 text-[#616060]">Nigeria</div>
+              <p class="text-black text-[24px] font-bold">
+                Provide Health Care to 20 Villages in Borno State
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       </section>
     </>
   )
