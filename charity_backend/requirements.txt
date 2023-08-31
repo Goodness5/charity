@@ -11,7 +11,7 @@ django-cors-headers
 django-filter
 djangorestframework
 requests
-
+drf_yasg
 
 
 
