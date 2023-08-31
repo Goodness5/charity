@@ -7,3 +7,12 @@ typing_extensions
 django-cors-headers
 gunicorn
 python-dotenv
+django-cors-headers
+django-filter
+djangorestframework
+requests
+
+
+
+
+
