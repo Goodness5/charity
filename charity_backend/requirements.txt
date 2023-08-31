@@ -5,3 +5,4 @@ Markdown
 sqlparse
 typing_extensions
 django-cors-headers
+gunicorn
