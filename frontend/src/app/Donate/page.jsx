@@ -29,7 +29,7 @@ export default function Donate() {
         <h1 className='font-bold text-[48px]'>Flood Rescuers’ Forum for Flood Victims</h1>
         <section className='flex gap-x-2'>
           <div className='bg-red w-[60%]'>
-            <Image src='FloodDonateImg.svg' width={0} height={0} className='w-full' />
+            <Image src='FloodDonateImg.svg' width={0} height={0} className='w-full' alt=''/>
             <div className='flex justify-between my-4'>
               <img src="fr.svg" alt="" srcset="" className='' />
               <img src="se.svg" alt="" srcset="" className='' />
@@ -93,7 +93,7 @@ export default function Donate() {
               </div>
               <div className='flex justify-center'>
                 <div className='buttonshade w-[40%]'>
-                  <button className='bg-white h-full w-full flex items-center justify-center gap-2 py-4'>Donate Now <Image src='Vector.svg' width={30} height={40} /></button>
+                  <button className='bg-white h-full w-full flex items-center justify-center gap-2 py-4'>Donate Now <Image src='Vector.svg' width={30} height={40} alt=''/></button>
                 </div>
               </div>
             </div>
@@ -161,28 +161,28 @@ export default function Donate() {
           </div>
           <div className='p-12 flex justify-between'>
             <div className='w-[30%] rounded borderstyling'>
-              <img src='./boyonboat.jpg' alt='' class="w-full" />
-              <div class="px-6 py-4">
-                <div class="font-bold text-[20px] mb-2 text-[#616060]">Nigeria</div>
-                <p class="text-black text-[24px] font-bold">
+              <img src='./boyonboat.jpg' alt='' className="w-full" />
+              <div className="px-6 py-4">
+                <div className="font-bold text-[20px] mb-2 text-[#616060]">Nigeria</div>
+                <p className="text-black text-[24px] font-bold">
                   Provide Health Care to 20 Villages in Borno State
                 </p>
               </div>
             </div>
             <div className='w-[30%] rounded shadow-lg borderstyling'>
-              <img src='./sunset.jpg' alt='' class="w-full" />
-              <div class="px-6 py-4">
-                <div class="font-bold text-[20px]  mb-2 text-[#616060]">PHILIPINES</div>
-                <p class="text-black text-[24px] font-bold">
+              <img src='./sunset.jpg' alt='' className="w-full" />
+              <div className="px-6 py-4">
+                <div className="font-bold text-[20px]  mb-2 text-[#616060]">PHILIPINES</div>
+                <p className="text-black text-[24px] font-bold">
                   Provide Health Care to 20 Villages in Borno State
                 </p>
               </div>
             </div>
             <div className='w-[30%] rounded shadow-lg borderstyling'>
-              <img src='./floodedhome.jpg'  alt=''  class="w-full" />
-              <div class="px-6 py-4">
-                <div class="font-bold text-[20px]  mb-2 text-[#616060]">Nigeria</div>
-                <p class="text-black text-[24px] font-bold">
+              <img src='./floodedhome.jpg'  alt=''  className="w-full" />
+              <div className="px-6 py-4">
+                <div className="font-bold text-[20px]  mb-2 text-[#616060]">Nigeria</div>
+                <p className="text-black text-[24px] font-bold">
                   Provide Health Care to 20 Villages in Borno State
                 </p>
               </div>

@@ -21,15 +21,15 @@ export default function Home() {
         <div className='w-[50%] flex flex-col gap-4'>
           <div className='flex justify-between'>
             <div className='flex items-end'>
-              <Image src='first.svg' width={160} height={0} className='max-[1095px]:w-[60%]' />
+              <Image src='first.svg' width={160} height={0} alt='' className='max-[1095px]:w-[60%]' />
             </div>
-            <Image src='third.svg' width={280} height={0} className='max-[1095px]:w-[50%]' />
+            <Image src='third.svg' width={280} height={0} alt='' className='max-[1095px]:w-[50%]' />
           </div>
           <div className='flex gap-[4em] max-[1095px]:gap-[2em] '>
             <div className='relative'>
-              <Image src='second.svg' width={130} height={0} className='max-[1095px]:w-[70%]' />
+              <Image src='second.svg' width={130} height={0} alt='' className='max-[1095px]:w-[70%]' />
             </div>
-            <Image src='fourth.svg' width={230} height={0} className='max-[1095px]:w-[40%]' />
+            <Image src='fourth.svg' width={230} height={0} alt='' className='max-[1095px]:w-[40%]' />
           </div>
         </div>
       </section>
@@ -40,28 +40,28 @@ export default function Home() {
         </div>
         <div className='p-12 flex justify-between'> 
           <div className='w-[30%] rounded borderstyling'>
-            <img src='./boyonboat.jpg' class="w-full" />
-            <div class="px-6 py-4">
-              <div class="font-bold text-[20px] mb-2 text-[#616060]">Nigeria</div>
-              <p class="text-black text-[24px] font-bold">
+            <img src='./boyonboat.jpg' className="w-full" />
+            <div className="px-6 py-4">
+              <div className="font-bold text-[20px] mb-2 text-[#616060]">Nigeria</div>
+              <p className="text-black text-[24px] font-bold">
                 Provide Health Care to 20 Villages in Borno State
               </p>
             </div>
           </div>
           <div className='w-[30%] rounded shadow-lg borderstyling'>
-            <img src='./sunset.jpg' class="w-full" />
-            <div class="px-6 py-4">
-              <div class="font-bold text-[20px]  mb-2 text-[#616060]">PHILIPINES</div>
-              <p class="text-black text-[24px] font-bold">
+            <img src='./sunset.jpg' className="w-full" />
+            <div className="px-6 py-4">
+              <div className="font-bold text-[20px]  mb-2 text-[#616060]">PHILIPINES</div>
+              <p className="text-black text-[24px] font-bold">
                 Provide Health Care to 20 Villages in Borno State
               </p>
             </div>
           </div>
           <div className='w-[30%] rounded shadow-lg borderstyling'>
-            <img src='./floodedhome.jpg' class="w-full" />
-            <div class="px-6 py-4">
-              <div class="font-bold text-[20px]  mb-2 text-[#616060]">Nigeria</div>
-              <p class="text-black text-[24px] font-bold">
+            <img src='./floodedhome.jpg' className="w-full" />
+            <div className="px-6 py-4">
+              <div className="font-bold text-[20px]  mb-2 text-[#616060]">Nigeria</div>
+              <p className="text-black text-[24px] font-bold">
                 Provide Health Care to 20 Villages in Borno State
               </p>
             </div>
@@ -80,7 +80,7 @@ export default function Home() {
               <div className='element'>
                 <div className='bg-white px-[4px] py-[1px] gap-x-4 flex rounded items-center'>
                   <div className='h-full text-[40px]'><p className='gy'>2</p></div>
-                  <Image src='Rectangle.svg' width={70} height={70} />
+                  <Image src='Rectangle.svg' width={70} height={70} alt='' />
                   <div>
                     <h2 className='font-bold text-[24px]'>Arnold David</h2>
                     <p className='text-[16px]'>Donated 500 dollars to Havilah Home for the Orphaned</p>
@@ -94,7 +94,7 @@ export default function Home() {
               <div className='element'>
                 <div className='bg-white px-[4px] py-[1px] gap-x-4 flex rounded items-center'>
                   <div className='h-full text-[40px]'><p className='gy'>1</p></div>
-                  <Image src='Rectangle.svg' width={70} height={70} />
+                  <Image src='Rectangle.svg' width={70} height={70} alt='' />
                   <div>
                     <h2 className='font-bold text-[24px]'>Arnold David</h2>
                     <p className='text-[16px]'>Donated 500 dollars to Havilah Home for the Orphaned</p>
@@ -109,7 +109,7 @@ export default function Home() {
               <div className='element'>
                 <div className='bg-white px-[4px] py-[1px] gap-x-4 flex rounded items-center'>
                   <div className='h-full text-[40px]'><p className='gy'>3</p></div>
-                  <Image src='Rectangle.svg' width={70} height={70} />
+                  <Image src='Rectangle.svg' width={70} height={70} alt=''/>
                   <div>
                     <h2 className='font-bold text-[24px]'>Arnold David</h2>
                     <p className='text-[16px]'>Donated 500 dollars to Havilah Home for the Orphaned</p>
@@ -125,7 +125,7 @@ export default function Home() {
             <div className='element'>
               <div className='bg-white px-[4px] py-[1px] gap-x-4 flex rounded items-center'>
                 <div className='h-full text-[40px]'><p className='gy'>4</p></div>
-                <Image src='Rectangle.svg' width={70} height={70} />
+                <Image src='Rectangle.svg' width={70} height={70} alt=''/>
                 <div>
                   <h2 className='font-bold text-[24px]'>Arnold David</h2>
                   <p className='text-[16px]'>Donated 500 dollars to Havilah Home for the Orphaned</p>
@@ -140,7 +140,7 @@ export default function Home() {
             <div className='element'>
               <div className='bg-white px-[4px] py-[1px] gap-x-4 flex rounded items-center'>
                 <div className='h-full text-[40px]'><p className='gy'>5</p></div>
-                <Image src='Rectangle.svg' width={70} height={70} />
+                <Image src='Rectangle.svg' width={70} height={70} alt=''/>
                 <div>
                   <h2 className='font-bold text-[24px]'>Arnold David</h2>
                   <p className='text-[16px]'>Donated 500 dollars to Havilah Home for the Orphaned</p>
@@ -151,7 +151,7 @@ export default function Home() {
             <div className='element'>
               <div className='bg-white px-[4px] py-[1px] gap-x-4 flex rounded items-center'>
                 <div className='h-full text-[40px]'><p className='gy'>6</p></div>
-                <Image src='Rectangle.svg' width={70} height={70} />
+                <Image src='Rectangle.svg' width={70} height={70} alt=''/>
                 <div>
                   <h2 className='font-bold text-[24px]'>Arnold David</h2>
                   <p className='text-[16px]'>Donated 500 dollars to Havilah Home for the Orphaned</p>
@@ -168,7 +168,7 @@ export default function Home() {
           <p className='text-center text-[24px]'>Donorm makes it easy to donate to reliable, locally-led disaster relief <br /> and recovery efforts around the world.</p>
         </div>
         <div>
-          <Image src='BasemapImage.svg' width={100} height={70} className='w-full'/>
+          <Image src='BasemapImage.svg' width={100} height={70} className='w-full' alt=''/>
         </div>
       </section>
       <section>
