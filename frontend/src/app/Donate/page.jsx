@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image'
-import { useState,useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { FaBars, FaSearch } from 'react-icons/fa';
 
 export default function Donate() {
@@ -31,10 +31,10 @@ export default function Donate() {
           <div className='bg-red w-[60%]'>
             <Image src='FloodDonateImg.svg' width={0} height={0} className='w-full' />
             <div className='flex justify-between my-4'>
-              <img src="fr.svg" alt="" srcset="" className='w-[12em]' />
-              <img src="se.svg" alt="" srcset="" className='w-[12em]' />
-              <img src="th.svg" alt="" srcset="" className='w-[12em]' />
-              <img src="fo.svg" alt="" srcset="" className='w-[8em]' />
+              <img src="fr.svg" alt="" srcset="" className='' />
+              <img src="se.svg" alt="" srcset="" className='' />
+              <img src="th.svg" alt="" srcset="" className='' />
+              <img src="fo.svg" alt="" srcset="" className='' />
             </div>
             <section>
               <section className='bg-[#FBFCEB] w-full flex flex-col gap-y-[24px] me p-6'>
@@ -84,8 +84,8 @@ export default function Donate() {
 
               </div>
               <div className="w-full h-4 bg-gray-300 rounded overflow-hidden">
-                
-              <div className="h-full bg-blue-500" style={{ width: `${progressPercentage}%` }}></div>
+
+                <div className="h-full bg-blue-500" style={{ width: `${progressPercentage}%` }}></div>
               </div>
               <div className='flex items-center gap-x-[1em] justify-between'>
                 <p><span className='font-bold'>0</span> Donations</p>
@@ -99,92 +99,101 @@ export default function Donate() {
             </div>
             <div className='me text-[16px] justify-between flex gap-y-6 flex-col p-8'>
               {/* <div className='buttonshade'> */}
-                {/* <div className='h-[12em] bg-[#fff] flex flex-col-reverse'> */}
-                  <div className='donateNowButtonShade'>
-                    <div className='h-full bg-[#fff] p-4 flex gap-x-4'>
-                      <p><span className='font-bold'>$10,000</span></p>
-                      <p>Cater for the accommodation and feeding of 100 Nigerians displaced by the flood</p>
-                    </div>
+              {/* <div className='h-[12em] bg-[#fff] flex flex-col-reverse'> */}
+              <div className='donateNowButtonShade'>
+                <div className='h-full bg-[#fff] p-4 flex gap-x-4'>
+                  <p><span className='font-bold'>$10,000</span></p>
+                  <p>Cater for the accommodation and feeding of 100 Nigerians displaced by the flood</p>
+                </div>
+              </div>
+              <div className='donateNowButtonShade'>
+                <div className='h-full bg-[#fff] p-4 flex gap-x-4'>
+                  <p><span className='font-bold'>$5,000</span></p>
+                  <p>Cater for the accommodation and feeding of 100 Nigerians displaced by the flood</p>
+                </div>
+              </div><div className='donateNowButtonShade'>
+                <div className='h-full bg-[#fff] p-4 flex gap-x-4'>
+                  <p><span className='font-bold'>$2,000</span></p>
+                  <p>Cater for the accommodation and feeding of 100 Nigerians displaced by the flood</p>
+                </div>
+              </div><div className='donateNowButtonShade'>
+                <div className='h-full bg-[#fff] p-4 flex gap-x-4'>
+                  <p><span className='font-bold'>$1,000</span></p>
+                  <p>Cater for the accommodation and feeding of 100 Nigerians displaced by the flood</p>
+                </div>
+              </div>
+              <div className='donateNowButtonShade'>
+                <div className='h-full bg-[#fff] p-4 flex gap-x-4'>
+                  <p><span className='font-bold'>$250</span></p>
+                  <p>Cater for the accommodation and feeding of 100 Nigerians displaced by the flood</p>
+                </div>
+              </div><div className='donateNowButtonShade'>
+                <div className='h-full bg-[#fff] p-4 flex gap-x-4'>
+                  <p><span className='font-bold'>$25</span></p>
+                  <p>Cater for the accommodation and feeding of 100 Nigerians displaced by the flood</p>
+                </div>
+              </div>
+              <div className='donateNowButtonShade'>
+                <div className='h-full bg-[#fff] p-4 flex items-center gap-x-4'>
+                  {/* <p><span className='font-bold'>$5,000</span></p> */}
+                  <div className='inputDivBorder'>$
+                    {/* <div className='bg-[red] p-2'> */}
+                      <input type="text" className='inputBorder w-full p-2 outline-none' />
+                    {/* </div> */}
                   </div>
-                  <div className='donateNowButtonShade'>
-                    <div className='h-full bg-[#fff] p-4 flex gap-x-4'>
-                      <p><span className='font-bold'>$5,000</span></p>
-                      <p>Cater for the accommodation and feeding of 100 Nigerians displaced by the flood</p>
-                    </div>
-                  </div><div className='donateNowButtonShade'>
-                    <div className='h-full bg-[#fff] p-4 flex gap-x-4'>
-                      <p><span className='font-bold'>$2,000</span></p>
-                      <p>Cater for the accommodation and feeding of 100 Nigerians displaced by the flood</p>
-                    </div>
-                  </div><div className='donateNowButtonShade'>
-                    <div className='h-full bg-[#fff] p-4 flex gap-x-4'>
-                      <p><span className='font-bold'>$1,000</span></p>
-                      <p>Cater for the accommodation and feeding of 100 Nigerians displaced by the flood</p>
-                    </div>
-                  </div>
-                  <div className='donateNowButtonShade'>
-                    <div className='h-full bg-[#fff] p-4 flex gap-x-4'>
-                      <p><span className='font-bold'>$250</span></p>
-                      <p>Cater for the accommodation and feeding of 100 Nigerians displaced by the flood</p>
-                    </div>
-                  </div><div className='donateNowButtonShade'>
-                    <div className='h-full bg-[#fff] p-4 flex gap-x-4'>
-                      <p><span className='font-bold'>$25</span></p>
-                      <p>Cater for the accommodation and feeding of 100 Nigerians displaced by the flood</p>
-                    </div>
-                  </div>
-                  <div className='donateNowButtonShade'>
-                    <div className='h-full bg-[#fff] p-4 flex items-center gap-x-4'>
-                      {/* <p><span className='font-bold'>$5,000</span></p> */}
-                      <input type="text" className='inputBorder'/>
-                      <p>Amount to donate</p>
-                    </div>
-                  </div>
-                  <p>
-                    Donating through Donorm is safe, secure and easy with many payment options to chose from
-                  </p>
-                {/* </div> */}
+
+                  <p>Amount to donate</p>
+                </div>
+              </div>
+              <p>
+                Donating through Donorm is safe, secure and easy with many payment options to chose from
+              </p>
+              {/* </div> */}
               {/* </div> */}
             </div>
-            
+
           </div>
         </section>
         <section>
-        <div>
-          <h1 className='text-center text-[48px] font-bold'>More Projects You Can Donate To</h1>
-          <p className='text-center text-[24px]'>These are popular causes around the world <br /> people are currently donating to</p>
-        </div>
-        <div className='p-12 flex justify-between'>
-          <div className='w-[30%] rounded borderstyling'>
-            <img src='./boyonboat.jpg' class="w-full" />
-            <div class="px-6 py-4">
-              <div class="font-bold text-[20px] mb-2 text-[#616060]">Nigeria</div>
-              <p class="text-black text-[24px] font-bold">
-                Provide Health Care to 20 Villages in Borno State
-              </p>
+          <div>
+            <h1 className='text-center text-[48px] font-bold'>More Projects You Can Donate To</h1>
+            <p className='text-center text-[24px]'>These are popular causes around the world <br /> people are currently donating to</p>
+          </div>
+          <div className='p-12 flex justify-between'>
+            <div className='w-[30%] rounded borderstyling'>
+              <img src='./boyonboat.jpg' alt='' class="w-full" />
+              <div class="px-6 py-4">
+                <div class="font-bold text-[20px] mb-2 text-[#616060]">Nigeria</div>
+                <p class="text-black text-[24px] font-bold">
+                  Provide Health Care to 20 Villages in Borno State
+                </p>
+              </div>
+            </div>
+            <div className='w-[30%] rounded shadow-lg borderstyling'>
+              <img src='./sunset.jpg' alt='' class="w-full" />
+              <div class="px-6 py-4">
+                <div class="font-bold text-[20px]  mb-2 text-[#616060]">PHILIPINES</div>
+                <p class="text-black text-[24px] font-bold">
+                  Provide Health Care to 20 Villages in Borno State
+                </p>
+              </div>
+            </div>
+            <div className='w-[30%] rounded shadow-lg borderstyling'>
+              <img src='./floodedhome.jpg'  alt=''  class="w-full" />
+              <div class="px-6 py-4">
+                <div class="font-bold text-[20px]  mb-2 text-[#616060]">Nigeria</div>
+                <p class="text-black text-[24px] font-bold">
+                  Provide Health Care to 20 Villages in Borno State
+                </p>
+              </div>
             </div>
           </div>
-          <div className='w-[30%] rounded shadow-lg borderstyling'>
-            <img src='./sunset.jpg' class="w-full" />
-            <div class="px-6 py-4">
-              <div class="font-bold text-[20px]  mb-2 text-[#616060]">PHILIPINES</div>
-              <p class="text-black text-[24px] font-bold">
-                Provide Health Care to 20 Villages in Borno State
-              </p>
-            </div>
-          </div>
-          <div className='w-[30%] rounded shadow-lg borderstyling'>
-            <img src='./floodedhome.jpg' class="w-full" />
-            <div class="px-6 py-4">
-              <div class="font-bold text-[20px]  mb-2 text-[#616060]">Nigeria</div>
-              <p class="text-black text-[24px] font-bold">
-                Provide Health Care to 20 Villages in Borno State
-              </p>
-            </div>
-          </div>
-        </div>
+        </section>
+
       </section>
-      </section>
+      <div className='border-gradient'>
+
+      </div>
     </>
   )
 }

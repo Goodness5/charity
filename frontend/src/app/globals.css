@@ -43,23 +43,28 @@ border-bottom: 8px solid var(--primary-grey, #D7D7D7);
 border-left: 2px solid var(--primary-grey, #D7D7D7);
 }
 .navbarDonateBtn {
-  background: var(--primary, linear-gradient(27deg, #0CC71F 0.86%, #3EA0BF 38.20%, #FF449E 100%));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  width: 227px;
-  height: 64px;
-  padding: 16px 56px 16px 56px;
+  background: radial-gradient(circle, #0CC71F -18.58%, #3EA0BF 27.44%, #FF449E 103.59%),
+  linear-gradient(0deg, #FBFCEB, #FBFCEB);
+  /* width: 227px; */
+  /* height: 64px; */
+  /* padding: 16px 56px 16px 56px; */
+  /* padding: 4em; */
+  border-radius: 5px;
 
   /* Apply the gradient as a border image */
-  border: 4px solid red 8px;
+  border-width: 1px 1px 4px;
   border-image-source: linear-gradient(80.95deg, #0CC71F -18.58%, #3EA0BF 27.44%, #FF449E 103.59%);
   border-image-slice: 1 1 4 1; /* Corresponds to the order: top right bottom left */
   border-image-width: 1px 1px 4px 1px; /* Corresponds to the order: top right bottom left */
   border-image-outset: 0; /* Reset the outset to prevent scaling of the gradient */
 }
 
-
+.NavDonateText{
+  background: var(--primary, linear-gradient(27deg, #0CC71F 0.86%, #3EA0BF 38.20%, #FF449E 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
 .btnn{
@@ -125,14 +130,38 @@ border-left: 2px solid var(--primary-grey, #D7D7D7);
 
   border-radius: 4px;
 }
-.inputBorder{
+.inputDivBorder{
   display: flex;
-width: 118px;
-padding: 12px 96px 12px 12px;
+width: 30%;
+padding: 0 0.5em;
 align-items: center;
   border-radius: 2px;
 border: 0.5px solid var(--primary-black, #131313);
 }
 
 
+
+.border-gradient {
+  height: 4em;
+  width: 4em;
+  /* background: #000; */
+  position: relative;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  border-image: linear-gradient(
+    107deg,
+    #ff4848 16.15%,
+    #ff48b6 30.73%,
+    #b748d7 48.96%,
+    #9448e8 70.31%,
+    #6248ff 90.63%
+  );
+  border-image-slice: 1;
+  
+}
+
+.search-input{
+  border: 1px solid rgb(210, 210, 210);
+  outline: none;
+}
 

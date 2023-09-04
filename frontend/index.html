@@ -1,20 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Document</title>
+    <title>API Data Submission</title>
 </head>
 <body>
-    <table border="2px"> <!-- the first tag to be used when creating a table-->
-        <thead> <!-- the head of the table the first row of the table-->
-            <tr>  <!-- this is to create a table row -->
+    <h1>Login Form</h1>
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
 
-                <!-- th is used when creating the first row of a table, <th> makes the fields in the first row bold automatically-->
-                <th>Name</th> 
-                <th>Email</th>
-                <th>Age</th>
-                <th>Matric</th>
-            </tr>
-        </thead>
-    </table>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            const data = {
+                username: username,
+                password: password
+            };
+
+            fetch('https://dornom.raletale.ng/api/login/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(result => {
+                console.log('API Response:', result);
+                // Handle the API response here
+            })
+            .catch(error => {
+                console.error('API Error:', error);
+                // Handle errors here
+            });
+        });
+    </script>
 </body>
 </html>

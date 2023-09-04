@@ -38,7 +38,7 @@ export default function Home() {
           <h1 className='text-center text-[48px] font-bold'>Projects You Can Donate To</h1>
           <p className='text-center text-[24px]'>These are popular causes around the world <br /> people are currently donating to</p>
         </div>
-        <div className='p-12 flex justify-between'>
+        <div className='p-12 flex justify-between'> 
           <div className='w-[30%] rounded borderstyling'>
             <img src='./boyonboat.jpg' class="w-full" />
             <div class="px-6 py-4">
